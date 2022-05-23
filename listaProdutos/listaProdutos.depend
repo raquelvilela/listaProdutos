@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1653329556 source:c:\users\raque\onedrive\documentos\Área de trabalho\fatec\semestre 2\linguagem programacao\trabalhop2\listaprodutos\listaprodutos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"produto.h"
+
+1653329556 c:\users\raque\onedrive\documentos\Área de trabalho\fatec\semestre 2\linguagem programacao\trabalhop2\listaprodutos\listaprodutos\produto.h
+
+1653329575 source:c:\users\raque\onedrive\documentos\Área de trabalho\fatec\semestre 2\linguagem programacao\trabalhop2\listaprodutos\listaprodutos\produto.c
+	<stdio.h>
+	<stdlib.h>
+	"produto.h"
+
