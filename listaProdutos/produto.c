@@ -58,26 +58,33 @@ void encontrar(Produto* p[], int proc, int pos){
     }
     printf("Registro não encontrado \n");
 }
-void comprar(Produto* p[], int proc, int pos, int qtdCompra){ // add ESTOQUE
-        int estoque = p[pos]->quantidadeEstoque;
+void comprar(Produto* p[], int proc, int pos, int qtdCompra){
+        //int estoque = p[pos]->quantidadeEstoque;
         double somaCompra = 0.0;
-        for(int i=0; i<qtdCompra; i++) {
-            for(int i=0; i<pos; i++){
-            if(proc== p[i]->codigo){
-            somaCompra += p[i]->preco;
-
+        int resp;
+        //do{
+           // printf("Caso deseje realizar a compra de outro produdo digite '1', caso nao queira,digite '0'?");
+            //scanf("%d", &resp);
+            for(int i=0; i<qtdCompra; i++) {
+                for(int i=0; i<pos; i++){
+                if(proc == p[i]->codigo){
+                somaCompra += p[i]->preco;
+            }
+            p[i]->quantidadeEstoque++;
         }
-        estoque++;
     }
-}
+        //printf("Caso deseje realizar a compra de outro produdo digite '1', caso nao queira,digite '0'?");
+        //scanf("%d", &resp);
+//}while(resp!=0);
+
     printf("Valor final da compra: %.2lf \n", somaCompra);
-    printf("Valor final do estoque: %.2lf \n", estoque);
+    printf("Valor final do estoque: %.2d \n", p[pos]->quantidadeEstoque);
     printf("\n");
     printf("--------------------------------------\n");
     printf("\n");
 }
 void vender(Produto* p[], int proc, int pos, int qtdVenda){
-        int estoque = p[pos]->quantidadeEstoque;
+        //int estoque = p[pos]->quantidadeEstoque;
         double somaVenda = 0.0;
         for(int i=0; i<qtdVenda; i++) {
             for(int i=0; i<pos; i++){
@@ -85,11 +92,11 @@ void vender(Produto* p[], int proc, int pos, int qtdVenda){
             somaVenda += p[i]->preco;
 
         }
-        estoque--;
+        p[i]->quantidadeEstoque--;
     }
 }
     printf("Valor final da venda: %.2lf \n", somaVenda);
-    printf("Valor final do estoque: %.2lf \n", estoque);
+    printf("Valor final do estoque: %.2d \n", p[pos]->quantidadeEstoque);
     printf("\n");
     printf("--------------------------------------\n");
     printf("\n");
