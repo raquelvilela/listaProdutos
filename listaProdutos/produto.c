@@ -7,7 +7,6 @@ void inicializar(Produto* p[], int tam){
         p[i] = NULL;
     }
 }
-
 void cadastrar(Produto* p[], int pos){
     p[pos] = (Produto*)malloc(sizeof(struct produto));
     fflush(stdin);
@@ -41,7 +40,6 @@ void listar(Produto* p[], int pos){
 
     }
 }
-
 void encontrar(Produto* p[], int proc, int pos){
     for(int i=0; i<pos; i++){
         if(proc== p[i]->codigo){
@@ -62,9 +60,7 @@ void comprar(Produto* p[], int proc, int pos, int qtdCompra){
         int estoque = 0;
         double somaCompra = 0.0;
         int resp;
-        //do{
-           // printf("Caso deseje realizar a compra de outro produdo digite '1', caso nao queira,digite '0'?");
-            //scanf("%d", &resp);
+
             for(int i=0; i<qtdCompra; i++) {
                 for(int i=0; i<pos; i++){
                 if(proc == p[i]->codigo){
@@ -72,10 +68,7 @@ void comprar(Produto* p[], int proc, int pos, int qtdCompra){
                 estoque = ++p[i]->quantidadeEstoque;
                 }
             }
-
-        //printf("Valor final do estoque: %.2d \n", p[i]->quantidadeEstoque);
     }
-
     printf("Valor final do estoque: %.2d \n", estoque);
     printf("Valor final da compra: %.2lf \n", somaCompra);
     printf("\n");
@@ -90,12 +83,9 @@ void vender(Produto* p[], int proc, int pos, int qtdVenda){
             if(proc== p[i]->codigo){
             somaVenda += p[i]->preco;
             estoque = --p[i]->quantidadeEstoque;
-
         }
-
     }
 }
-
     printf("Valor final do estoque: %.2d \n", estoque);
     printf("Valor final da venda: %.2lf \n", somaVenda);
     printf("\n");

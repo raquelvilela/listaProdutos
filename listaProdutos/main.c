@@ -3,7 +3,7 @@
 #define T 500
 #include "produto.h"
 
-// --- COMPRA E VENDA ---
+// --- REALIZAR MAIS TESTES ---
 
 int main()
 {
