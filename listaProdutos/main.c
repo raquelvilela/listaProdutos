@@ -3,7 +3,7 @@
 #define T 500
 #include "produto.h"
 
-// --- REVER COMPRA E VENDA ---
+// --- COMPRA E VENDA ---
 
 int main()
 {
@@ -42,23 +42,18 @@ int main()
                 encontrar(vet_produto, codigoProc, pos);
                 break;
             case 4:
-                printf("Digite a quantidade do produto: \n");
+                printf("Digite a quantidade do produto que deseja comprar: \n");
                 scanf("%d", &qtdCompra);
                 printf("Digite o codigo do produto a ser comprado: \n");
                 scanf("%d", &codigoProc);
                 comprar(vet_produto, codigoProc, pos, qtdCompra);
                 break;
             case 5:
-                do{
                     printf("Digite a quantidade de itens para vender: \n");
                     scanf("%d", &qtdVenda);
                     printf("Digite o codigo do produto a ser vendido: \n");
                     scanf("%d", &codigoProc);
-                    //vender(vet_produto, codigoProc, pos, qtdVenda);
-                    printf("Caso deseje realizar a compra de outro produdo digite '1', caso nao queira,digite '0'?");
-                    scanf("%d", &resp);
-                }while(resp!=0);
-                vender(vet_produto, codigoProc, pos, qtdVenda);
+                    vender(vet_produto, codigoProc, pos, qtdVenda);
                 break;
             case 9:
                 printf("Fim do programa \n");
