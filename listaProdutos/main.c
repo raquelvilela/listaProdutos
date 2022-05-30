@@ -14,8 +14,7 @@ int main()
 
     int opc = 0;
     int resp = 0;
-    int qtdCompra = 0;
-    int qtdVenda = 0;
+    int qtdCompra = 0, qtdVenda = 0;
     int pos = 0;
     int codigoProc = 0;
     Produto* vet_produto[T];
