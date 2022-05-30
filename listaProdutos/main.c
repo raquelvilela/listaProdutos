@@ -3,7 +3,6 @@
 #include <locale.h>
 #define T 500
 #include "produto.h"
-void resizeConsole(int width, int height);
 
 int main()
 {
@@ -33,7 +32,7 @@ int main()
         printf("\t\t4. Comprar Produto \n");
         printf("\t\t5. Vender Produto \n");
         printf("\t\t9. Sair \n\n");
-        printf("\t\tDigite sua opção: \n");
+        printf("\t\tDigite sua opÃ§Ã£o: \n");
         scanf("%d", &opc);
         switch(opc){
 
@@ -45,21 +44,21 @@ int main()
                 listar(vet_produto, pos);
                 break;
             case 3:
-                printf("\tDigite o código do produto a ser encontrado: \n");
+                printf("\tDigite o cÃ³digo do produto a ser encontrado: \n");
                 scanf("%d", &codigoProc);
                 encontrar(vet_produto, codigoProc, pos);
                 break;
             case 4:
                 printf("\tDigite a quantidade do produto que deseja comprar: \n");
                 scanf("%d", &qtdCompra);
-                printf("\tDigite o código do produto a ser comprado: \n");
+                printf("\tDigite o cÃ³digo do produto a ser comprado: \n");
                 scanf("%d", &codigoProc);
                 comprar(vet_produto, codigoProc, pos, qtdCompra);
                 break;
             case 5:
                     printf("\tDigite a quantidade de itens para vender: \n");
                     scanf("%d", &qtdVenda);
-                    printf("\tDigite o código do produto a ser vendido: \n");
+                    printf("\tDigite o cÃ³digo do produto a ser vendido: \n");
                     scanf("%d", &codigoProc);
                     vender(vet_produto, codigoProc, pos, qtdVenda);
                 break;
@@ -67,7 +66,7 @@ int main()
                 printf("\t\t---Fim do programa ---\n");
                 break;
             default:
-                printf("\t\tOpção inválida. \n");
+                printf("\t\tOpÃ§Ã£o invÃ¡lida. \n");
         }
         system("pause");
         system("cls");
