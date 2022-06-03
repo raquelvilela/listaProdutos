@@ -22,11 +22,11 @@ int main()
 
     do{
         fflush(stdin);
-        printf("\t\t***************************\n");
-        printf("\t\t*****LISTA DE PRODUTOS*****\n");
-        printf("\t\t***************************\n");
+        printf("\t\t*****************************\n");
+        printf("\t\t***** LISTA DE PRODUTOS *****\n");
+        printf("\t\t*****************************\n");
         printf("\t\t1. Cadastrar Produto \n");
-        printf("\t\t2. Listar Produto \n");
+        printf("\t\t2. Listar Produtos \n");
         printf("\t\t3. Encontrar Produto \n");
         printf("\t\t4. Comprar Produto \n");
         printf("\t\t5. Vender Produto \n");
