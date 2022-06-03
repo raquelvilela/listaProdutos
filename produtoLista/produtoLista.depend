@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1653915216 source:d:\ads\2022\2perÍodo\linprog - maromo\p2\produtolista\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1654281172 source:c:\users\raque\onedrive\documentos\Área de trabalho\fatec\semestre 2\linguagem programacao\trabalhop2\listaprodutos\produtolista\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
