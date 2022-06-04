@@ -1,14 +1,15 @@
 # depslib dependency file v1.0
-1653930690 source:c:\users\raque\onedrive\documentos\햞ea de trabalho\fatec\semestre 2\linguagem programacao\trabalhop2\listaprodutos\listaprodutos\main.c
+1654283186 source:c:\users\raque\onedrive\documentos\햞ea de trabalho\fatec\semestre 2\linguagem programacao\trabalhop2\listaprodutos\listaprodutos\main.c
 	<stdio.h>
 	<stdlib.h>
 	<locale.h>
 	"produto.h"
 
-1653519197 c:\users\raque\onedrive\documentos\햞ea de trabalho\fatec\semestre 2\linguagem programacao\trabalhop2\listaprodutos\listaprodutos\produto.h
+1654283412 c:\users\raque\onedrive\documentos\햞ea de trabalho\fatec\semestre 2\linguagem programacao\trabalhop2\listaprodutos\listaprodutos\produto.h
 
-1653931051 source:c:\users\raque\onedrive\documentos\햞ea de trabalho\fatec\semestre 2\linguagem programacao\trabalhop2\listaprodutos\listaprodutos\produto.c
+1654283315 source:c:\users\raque\onedrive\documentos\햞ea de trabalho\fatec\semestre 2\linguagem programacao\trabalhop2\listaprodutos\listaprodutos\produto.c
 	<stdio.h>
 	<stdlib.h>
 	"produto.h"
+	<locale.h>
 

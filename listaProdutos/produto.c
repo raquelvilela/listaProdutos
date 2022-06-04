@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "produto.h"
-
+#include<locale.h>
 void inicializar(Produto* p[], int tam){
     for(int i=0; i<tam; i++){
         p[i] = NULL;
@@ -26,6 +26,7 @@ void cadastrar(Produto* p[], int pos){
     scanf("%lf", &p[pos]->preco);
     printf("\t\t\nRegistro do produto realizado com sucesso \n");
     printf("\n");
+
 }
 void listar(Produto* p[], int pos){
     for(int i=0; i<pos; i++){
