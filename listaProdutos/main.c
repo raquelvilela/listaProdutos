@@ -7,7 +7,7 @@
 int main()
 {
     system("title Lista de Produtos"); //titulo
-    system("mode con:cols=60 lines=30"); //redimendionar tamanho
+    system("mode con:cols=62 lines=32"); //redimendionar tamanho
 
     setlocale(LC_ALL, "ptb"); // acentuacao portugues
     system ("color 1F"); // system ("color 15F")  -- mudar cor
