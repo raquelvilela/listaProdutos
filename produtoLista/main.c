@@ -22,7 +22,7 @@ void vender(Produto* p[], int proc, int pos, int qtdVenda);
 int main()
 {
     system("title Lista de Produtos"); //titulo
-    system("mode con:cols=60 lines=30"); //redimendionar tamanho
+    system("mode con:cols=62 lines=32"); //redimendionar tamanho
     setlocale(LC_ALL, "ptb");
     system ("color 1F");
 
@@ -122,7 +122,7 @@ void cadastrar(Produto* p[], int pos){
 }
 void listar(Produto* p[], int pos){
     for(int i=0; i<pos; i++){
-        printf("\t\tDados do Registro: %d \n", i+1);
+        printf("\t\tDados do Registro: %d \n", i+1 );
         printf("\t\tCódigo do Produto: %d \n", p[i]->codigo);
         printf("\t\tDescrição do Produto: %s \n", p[i]->descricao);
         printf("\t\tFornecedor do Produto: %s \n", p[i]->fornecedor);
@@ -131,7 +131,6 @@ void listar(Produto* p[], int pos){
         printf("\n");
         printf("\t\t------------------------------\n");
         printf("\n");
-        return;
 
     }
 }
